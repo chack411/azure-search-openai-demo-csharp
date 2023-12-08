@@ -35,8 +35,8 @@ internal static class WebApplicationExtensions
     private static IResult OnGetRuntimeVer(HttpContext context)
     {
         // get .NET runtime version
-
-        throw new NotImplementedException();
+        var runtimeVer = RuntimeInformation.FrameworkDescription;
+        return TypedResults.Ok(runtimeVer);
     }
 
     private static IResult OnGetEnableLogout(HttpContext context)
