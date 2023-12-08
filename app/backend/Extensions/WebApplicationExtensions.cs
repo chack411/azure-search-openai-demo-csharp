@@ -1,5 +1,7 @@
 ﻿// Copyright (c) Microsoft. All rights reserved.
 
+using System.Runtime.InteropServices;
+
 namespace MinimalApi.Extensions;
 
 internal static class WebApplicationExtensions
@@ -25,7 +27,16 @@ internal static class WebApplicationExtensions
 
         api.MapGet("enableLogout", OnGetEnableLogout);
 
+        api.MapGet("runtimever", OnGetRuntimeVer);
+
         return app;
+    }
+
+    private static IResult OnGetRuntimeVer(HttpContext context)
+    {
+        // get .NET runtime version
+
+        throw new NotImplementedException();
     }
 
     private static IResult OnGetEnableLogout(HttpContext context)
