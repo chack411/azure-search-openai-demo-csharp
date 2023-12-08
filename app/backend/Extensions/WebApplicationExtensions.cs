@@ -34,10 +34,6 @@ internal static class WebApplicationExtensions
 
     private static IResult OnGetRuntimeVer(HttpContext context)
     {
-        // Demo for GitHub Secret Scanning
-        string BLOB_ACCOUNT_NAME = "chackpythonfuncstoeea2ba";
-        string BLOB_KEY = "vxcEPUiBIT7Y49VIy44PUWLnlJFDroSC/yVAMZNE/TUQxwCrzajzwAFEUzg0Aoz7jSJzg76kRi24+AStUa1YMw==";
-
         // get .NET runtime version
         var runtimeVer = RuntimeInformation.FrameworkDescription;
         return TypedResults.Ok(runtimeVer);
