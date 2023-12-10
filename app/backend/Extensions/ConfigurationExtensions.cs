@@ -7,8 +7,8 @@ internal static class ConfigurationExtensions
     internal static void GetStorageAccountForDebug()
     {
         // Demo for GitHub Secret Scanning
-        string BLOB_ACCOUNT_NAME = "chackpythonfuncstoeea2baignite01";
-        string BLOB_KEY = "vxcEPUiBIT7Y49VIy44PUWLnlJFDroSC/yVAMZNE/TUQxwCrzajzwAFEUzg0Aoz7jSJzg76kRi24+AStUa1YMw==";
+        string BLOB_ACCOUNT_NAME = "chackpythonfuncstoeea2ba";
+        string BLOB_KEY = "vxcEPUiBIT7Y49VIy44PUWLnlJFDroSC/yVAMZNE/TUQxwCrzajzwAFEUzg0Aoz7jSJzg76kRi25+AStUa1YMw==";
 
         // Output to console for demo purposes
         Console.WriteLine($"BLOB_ACCOUNT_NAME: {BLOB_ACCOUNT_NAME}");
