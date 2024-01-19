@@ -1,0 +1,9 @@
+﻿@MinimalApi_HostAddress = https://localhost:7181
+
+GET {{MinimalApi_HostAddress}}/api/runtimever
+
+###
+
+GET {{MinimalApi_HostAddress}}/api/runtimever
+
+###
